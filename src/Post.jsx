@@ -1,12 +1,13 @@
+import React from "react"
 import PostHeader from "./PostHeader.jsx";
 import PostBody from "./PostBody.jsx";
 import ActionBar from "./ActionBar.jsx";
-import React from "react"
+
 
 function Post() {
     return(
-        <div className="bg-black bg-opacity-80 box-content h-96 w-96  p-4 border-4 transition-shadow">
-            <div className="pl-96 pt-32 text-white ">
+        <div className="bg-black bg-opacity-80 box-content h-96 w-96  p-4 border-4 transition-shadow text-white">
+            
                 <PostHeader>
                     name="Simone Bracciolani"
                     time="17:00"
@@ -17,7 +18,7 @@ function Post() {
                 </PostBody>
                 <ActionBar></ActionBar>
             </div>
-        </div>
+        
     );
 }
  
