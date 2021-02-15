@@ -1,6 +1,7 @@
 import PostHeader from "./PostHeader.jsx";
 import PostBody from "./PostBody.jsx";
 import ActionBar from "./ActionBar.jsx";
+import React from "react"
 
 function Post() {
     return(
