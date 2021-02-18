@@ -4,9 +4,9 @@ import React, { useState, useEffect } from 'react';
 
 function ActionBar() {
     return(
-      <div className="divPostActionBar text-white  text-opacity-80 dark:text-opacity-75">
+      <div className="divPostActionBar text-white  text-opacity-80 ">
       
-      <hr className="mx-4 dark:border-gray-300 dark:border-opacity-20" />
+      <hr className="mx-4 border-gray-300 " />
       <div className="divActionBar flex justify-around mx-4 my-2 ">
         <button className="flex font-medium hover:bg-gray-500 rounded-md py-2 px-12 transform active:scale-95">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -19,7 +19,7 @@ function ActionBar() {
             </svg><p className="text-xs">condividi</p>
         </button>
       </div>
-      <hr className="mx-4 p-1 dark:border-gray-300 dark:border-opacity-20" />
+      <hr className="mx-4 p-1 border-gray-300 " />
     </div>
       
     );

@@ -6,7 +6,7 @@ import PostComments from "./PostComments.jsx";
 
 function Post() {
     return(
-        <div className=" max-w-2xl rounded-xl shadow-lg mb-5 bg-black bg-opacity-80 text-white">
+        <div className=" max-w-2xl rounded-xl shadow-lg mb-5 bg-black bg-opacity-80 text-white  text-opacity-80 px-1">
             
                 <PostHeader
                     name="Simone Bracciolani"

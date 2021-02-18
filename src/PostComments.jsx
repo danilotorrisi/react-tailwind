@@ -11,14 +11,14 @@ function PostComments(props) {
                 </div>
             
                 <div className="flex-grow">
-                    <div className=" flex rounded-full bg-gray-400 p-2 m-2 ml-4 shadow-sm dark:shadow-md">
-                    <input type="text" className="flex-grow bg-gray-400 px-2 outline-none" placeholder="Scrivi un commento"></input>
+                    <div className=" flex rounded-full bg-gray-400 bg-opacity-20 p-2 m-2 ml-4 shadow-sm dark:shadow-md">
+                    <input type="text" className="flex-grow bg-gray-400 bg-opacity-0 px-2 outline-none" placeholder="Scrivi un commento"></input>
                     </div>
                 </div>
             </div>
             <div className=" flex items-start m-2 text-white text-opacity-80">
                 <div className="flex flex-col">
-                    <div className="divComment flex flex-col rounded-3xl bg-gray-400 bg-opacity-20 p-2 px-4 m-2 mb-0 ml-3 shadow-sm">
+                    <div className=" flex flex-col rounded-3xl bg-gray-400 bg-opacity-20 p-2 px-4 m-2 mb-0 ml-3 shadow-sm">
                     <p className="font-medium text-white text-opacity-95 hover:underline">
                         {props.name}
                     </p>
