@@ -2,11 +2,11 @@ import React from "react"
 import PostHeader from "./PostHeader.jsx";
 import PostBody from "./PostBody.jsx";
 import ActionBar from "./ActionBar.jsx";
-
+import PostComments from "./PostComments.jsx";
 
 function Post() {
     return(
-        <div className="bg-black bg-opacity-80 box-content h-96 w-96  p-4 border-4 transition-shadow text-white">
+        <div className=" max-w-2xl rounded-xl shadow-lg mb-5 bg-black bg-opacity-80 text-white">
             
                 <PostHeader
                     name="Simone Bracciolani"
@@ -17,6 +17,10 @@ function Post() {
                     text="hello world"
                 ></PostBody>
                 <ActionBar></ActionBar>
+                <PostComments 
+                    name="Simone"
+                    text="ciao a tutti"
+                ></PostComments>
             </div>
         
     );
