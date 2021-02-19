@@ -1,12 +1,13 @@
 import 'tailwindcss/dist/tailwind.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App.jsx';
+//import App from './App.jsx';
+import AppConversation from './AppConversation';
 import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AppConversation />
   </React.StrictMode>,
   document.getElementById('root'),
 );
