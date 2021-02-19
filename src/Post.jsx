@@ -18,6 +18,7 @@ function Post() {
       <PostComments
         name={faker.fake('{{name.firstName}} {{name.lastName}}')}
         text={faker.lorem.words(15)}
+        avatar={faker.image.cats()}
       ></PostComments>
     </div>
   );
