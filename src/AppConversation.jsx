@@ -14,7 +14,13 @@ const dateLuxon = DateTime.fromJSDate(date);
 
 function App() {
   return (
-    <div className="App h-full w-full bg-gray-100 dark:bg-kbook-default">
+    <div className="App flex flex-col h-full w-full bg-gray-100 dark:bg-kbook-default">
+      <ConversationItem
+        avatar={faker.image.cats()}
+        username={faker.fake('{{name.firstName}} {{name.lastName}}')}
+        lastMessage={faker.lorem.sentences()}
+        date={dateLuxon.toRelative()}
+      />
       <ConversationItem
         avatar={faker.image.cats()}
         username={faker.fake('{{name.firstName}} {{name.lastName}}')}
