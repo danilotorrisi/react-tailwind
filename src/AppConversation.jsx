@@ -2,33 +2,193 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import ConversationItem from './ConversationItem.jsx';
 import faker from 'faker';
-import { DateTime } from 'luxon';
 
-// Create a JS Date.
-const date = new Date(2020, 1, 1);
+function AppConversation() {
+  let chat = [
+    {
+      username: faker.name.findName(),
+      imgProfile: faker.image.imageUrl(200, 200, null, true),
+      lastMessage: faker.lorem.sentences(),
+      date: faker.date.past(),
+      isRead: faker.random.boolean(),
+    },
+    {
+      username: faker.name.findName(),
+      imgProfile: faker.image.imageUrl(200, 200, null, true),
+      lastMessage: faker.lorem.sentences(),
+      date: faker.date.recent(),
+      isRead: faker.random.boolean(),
+    },
+    {
+      username: faker.name.findName(),
+      imgProfile: faker.image.imageUrl(200, 200, null, true),
+      lastMessage: faker.lorem.sentences(),
+      date: faker.date.recent(),
+      isRead: faker.random.boolean(),
+    },
+    {
+      username: faker.name.findName(),
+      imgProfile: faker.image.imageUrl(200, 200, null, true),
+      lastMessage: faker.lorem.sentences(),
+      date: faker.date.recent(),
+      isRead: faker.random.boolean(),
+    },
+    {
+      username: faker.name.findName(),
+      imgProfile: faker.image.imageUrl(200, 200, null, true),
+      lastMessage: faker.lorem.sentences(),
+      date: faker.date.recent(),
+      isRead: faker.random.boolean(),
+    },
+    {
+      username: faker.name.findName(),
+      imgProfile: faker.image.imageUrl(200, 200, null, true),
+      lastMessage: faker.lorem.sentences(),
+      date: faker.date.recent(),
+      isRead: faker.random.boolean(),
+    },
+    {
+      username: faker.name.findName(),
+      imgProfile: faker.image.imageUrl(200, 200, null, true),
+      lastMessage: faker.lorem.sentences(),
+      date: faker.date.recent(),
+      isRead: faker.random.boolean(),
+    },
+    {
+      username: faker.name.findName(),
+      imgProfile: faker.image.imageUrl(200, 200, null, true),
+      lastMessage: faker.lorem.sentences(),
+      date: faker.date.recent(),
+      isRead: faker.random.boolean(),
+    },
+    {
+      username: faker.name.findName(),
+      imgProfile: faker.image.imageUrl(200, 200, null, true),
+      lastMessage: faker.lorem.sentences(),
+      date: faker.date.past(),
+      isRead: faker.random.boolean(),
+    },
+    {
+      username: faker.name.findName(),
+      imgProfile: faker.image.imageUrl(200, 200, null, true),
+      lastMessage: faker.lorem.sentences(),
+      date: faker.date.past(),
+      isRead: faker.random.boolean(),
+    },
+    {
+      username: faker.name.findName(),
+      imgProfile: faker.image.imageUrl(200, 200, null, true),
+      lastMessage: faker.lorem.sentences(),
+      date: faker.date.past(),
+      isRead: faker.random.boolean(),
+    },
+    {
+      username: faker.name.findName(),
+      imgProfile: faker.image.imageUrl(200, 200, null, true),
+      lastMessage: faker.lorem.sentences(),
+      date: faker.date.past(),
+      isRead: faker.random.boolean(),
+    },
+    {
+      username: faker.name.findName(),
+      imgProfile: faker.image.imageUrl(200, 200, null, true),
+      lastMessage: faker.lorem.sentences(),
+      date: faker.date.past(),
+      isRead: faker.random.boolean(),
+    },
+    {
+      username: faker.name.findName(),
+      imgProfile: faker.image.imageUrl(200, 200, null, true),
+      lastMessage: faker.lorem.sentences(),
+      date: faker.date.past(),
+      isRead: faker.random.boolean(),
+    },
 
-// Convert to Luxon Date.
-const dateLuxon = DateTime.fromJSDate(date);
-
-// A year ago, A month..
-
-function App() {
+    {
+      username: faker.name.findName(),
+      imgProfile: faker.image.imageUrl(200, 200, null, true),
+      lastMessage: faker.lorem.sentences(),
+      date: faker.date.past(),
+      isRead: faker.random.boolean(),
+    },
+    {
+      username: faker.name.findName(),
+      imgProfile: faker.image.imageUrl(200, 200, null, true),
+      lastMessage: faker.lorem.sentences(),
+      date: faker.date.past(),
+      isRead: faker.random.boolean(),
+    },
+    {
+      username: faker.name.findName(),
+      imgProfile: faker.image.imageUrl(200, 200, null, true),
+      lastMessage: faker.lorem.sentences(),
+      date: faker.date.past(),
+      isRead: faker.random.boolean(),
+    },
+    {
+      username: faker.name.findName(),
+      imgProfile: faker.image.imageUrl(200, 200, null, true),
+      lastMessage: faker.lorem.sentences(),
+      date: faker.date.past(),
+      isRead: faker.random.boolean(),
+    },
+    {
+      username: faker.name.findName(),
+      imgProfile: faker.image.imageUrl(200, 200, null, true),
+      lastMessage: faker.lorem.sentences(),
+      date: faker.date.past(),
+      isRead: faker.random.boolean(),
+    },
+    {
+      username: faker.name.findName(),
+      imgProfile: faker.image.imageUrl(200, 200, null, true),
+      lastMessage: faker.lorem.sentences(),
+      date: faker.date.past(),
+      isRead: faker.random.boolean(),
+    },
+    {
+      username: faker.name.findName(),
+      imgProfile: faker.image.imageUrl(200, 200, null, true),
+      lastMessage: faker.lorem.sentences(),
+      date: faker.date.past(),
+      isRead: faker.random.boolean(),
+    },
+    {
+      username: faker.name.findName(),
+      imgProfile: faker.image.imageUrl(200, 200, null, true),
+      lastMessage: faker.lorem.sentences(),
+      date: faker.date.past(),
+      isRead: faker.random.boolean(),
+    },
+    {
+      username: faker.name.findName(),
+      imgProfile: faker.image.imageUrl(200, 200, null, true),
+      lastMessage: faker.lorem.sentences(),
+      date: faker.date.past(),
+      isRead: faker.random.boolean(),
+    },
+    {
+      username: faker.name.findName(),
+      imgProfile: faker.image.imageUrl(200, 200, null, true),
+      lastMessage: faker.lorem.sentences(),
+      date: faker.date.past(),
+      isRead: faker.random.boolean(),
+    },
+    {
+      username: faker.name.findName(),
+      imgProfile: faker.image.imageUrl(200, 200, null, true),
+      lastMessage: faker.lorem.sentences(),
+      date: faker.date.past(),
+      isRead: faker.random.boolean(),
+    },
+  ];
   return (
     <div className="App flex flex-col h-full w-full bg-gray-100 dark:bg-kbook-default">
-      <ConversationItem
-        avatar={faker.image.cats()}
-        username={faker.fake('{{name.firstName}} {{name.lastName}}')}
-        lastMessage={faker.lorem.sentences()}
-        date={dateLuxon.toRelative()}
-      />
-      <ConversationItem
-        avatar={faker.image.cats()}
-        username={faker.fake('{{name.firstName}} {{name.lastName}}')}
-        lastMessage={faker.lorem.sentences()}
-        date={dateLuxon.toRelative()}
-      />
+      {chat.map((chat, i) => {
+        return <ConversationItem key={i} {...chat}></ConversationItem>;
+      })}
     </div>
   );
 }
 
-export default App;
+export default AppConversation;
