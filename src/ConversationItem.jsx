@@ -19,7 +19,7 @@ function ChatIsRead(props) {
       </div>
     );
   } else {
-    return <div className="truncate w-44 text-gray-700 dark:text-white"></div>;
+    return <div></div>;
   }
 }
 
