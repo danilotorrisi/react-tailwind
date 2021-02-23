@@ -8,6 +8,8 @@
   },
   "dependencies": {
     "autoprefixer": "^10.2.4",
+    "classname": "0.0.0",
+    "classnames": "^2.2.6",
     "faker": "^5.4.0",
     "luxon": "^1.26.0",
     "react": "^17.0.0",
