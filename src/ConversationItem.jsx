@@ -14,7 +14,7 @@ function RelativeChat(props) {
 
 function ConversationItem(props) {
   return (
-    <div className="flex items-stretch m-1 p-2 bg-white rounded-lg hover:bg-gray-100">
+    <div className="flex items-stretch m-1 p-2 bg-white rounded-lg hover:bg-gray-100 cursor-pointer">
       <img
         src={props.imgProfile}
         className="w-12 h-12 rounded-full object-cover "
