@@ -5,28 +5,28 @@ import Message from './Message';
 function MessageProps() {
   let chat = [
     {
-      // direction:
+      direction: faker.random.boolean() ? 'receive' : 'send',
       sentAt: faker.date.recent(),
       receivedAt: faker.date.recent(),
       readAt: faker.date.past(),
       body: faker.lorem.sentences(),
     },
     {
-      // direction:
+      direction: faker.random.boolean() ? 'receive' : 'send',
       sentAt: faker.date.recent(),
       receivedAt: faker.date.recent(),
       readAt: faker.date.past(),
       body: faker.lorem.sentences(),
     },
     {
-      // direction:
+      direction: faker.random.boolean() ? 'receive' : 'send',
       sentAt: faker.date.past(),
       receivedAt: faker.date.past(),
       readAt: faker.date.past(),
       body: faker.lorem.sentences(),
     },
     {
-      // direction:
+      direction: faker.random.boolean() ? 'receive' : 'send',
       sentAt: faker.date.past(),
       receivedAt: faker.date.past(),
       readAt: faker.date.past(),
@@ -34,12 +34,10 @@ function MessageProps() {
     },
   ];
   return (
-    <div className="flex flex-col items-center m-2 mt-0 mb-8 max-w-2xl">
-      <div className="flex items-end">
-        {chat.map((chat, i) => {
-          return <Message key={i} {...chat}></Message>;
-        })}
-      </div>
+    <div className="flex flex-col">
+      {chat.map((chat, i) => {
+        return <Message key={i} {...chat}></Message>;
+      })}
     </div>
   );
 }
